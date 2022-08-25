@@ -1,0 +1,81 @@
+
+
+
+.navbar{
+/* border: 1px solid red; */
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+width: 95%;
+margin: auto;
+margin-top: 40px;
+
+}
+
+.input{
+
+width: 40%;
+height: 40px;
+border: 1px solid black;
+
+
+}
+
+.h1{
+
+font-size: 30px;
+font-weight: bold;
+
+}
+
+
+.image{
+
+height: 40px;
+
+
+}
+
+
+
+.div{
+
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.p{
+
+padding-right: 40px;
+
+
+}
+
+
+
+.divider{
+
+border: 1px solid black;
+width: 95%;
+margin: auto;
+border-top: none;
+margin-top: 20px;
+
+
+}
+
+
+.pages{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 87%;
+margin: auto;
+margin-top: 20px;
+
+}

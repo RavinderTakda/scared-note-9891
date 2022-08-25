@@ -7,6 +7,7 @@ import { AllRoutes } from './Routes/AllRoutes';
 import { Footer } from './Component/Footer';
 import { ProductPage } from './Component/Productpage';
 import { Homepage } from './Component/Homepage';
+import { Navbar } from './Component/Navbar';
 
 
 function App() {
@@ -14,8 +15,8 @@ function App() {
    <>
 
 
-
-<Footer/>
+<Homepage/>
+{/* <Navbar/> */}
    
 
 

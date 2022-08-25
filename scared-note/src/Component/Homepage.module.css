@@ -1,0 +1,46 @@
+
+
+.div1{
+
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+background-color: #f9f9f9 ;
+width: 95%;
+margin: auto;
+
+}
+
+.div1image{
+
+width: 10%;
+height: 200px;
+
+
+}
+
+.bonusnote{
+
+font-weight: bold;
+
+}
+
+
+
+.div12image{
+
+display: flex;
+margin-top: 40px;
+
+
+}
+
+
+.div12link{
+
+    display: flex;
+
+    justify-content: space-evenly;
+    
+    }
+
