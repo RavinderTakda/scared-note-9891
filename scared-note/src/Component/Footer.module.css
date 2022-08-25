@@ -1,7 +1,136 @@
 
+.emailupdate{
 
-.nord{
-border:"1px solid red";
-color: "red";
+display: flex;
+
+align-items: center;
+
+
+justify-content:flex-end;
 
 }
+
+
+
+.get{
+
+margin-right: 10px;
+
+
+}
+
+
+
+.input{
+border: 1px solid black;
+width: 15%;
+height: 38px;
+margin-right: 10px;
+
+}
+
+
+
+.signup{
+
+  width: 15%;
+  height: 38px;
+background-color:black;
+color: white;
+margin-right: 40px;
+
+  
+}
+
+.footerbackgroundcolor{
+
+  background-color: #f9f9f9;
+
+
+}
+
+
+
+.footer{
+
+display: flex;
+justify-content: space-between;
+width: 90%;
+margin: auto;
+margin-top: 30px;
+
+
+}
+
+
+.footerdiv{
+
+height: 500px;
+line-height: 40px;
+
+
+}
+
+
+
+.socialmediaicon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+margin-top: 40px;
+}
+
+
+.twitterimage{
+
+
+  width: 60px;
+  height: 60px;
+  
+  
+  }
+
+  .instagramimage{
+
+
+    width: 50px;
+    height: 43px;
+    padding-right: 10px;
+    
+    
+    }
+
+    .pinterestimage{
+
+
+      width: 41px;
+      height: 41px;
+      
+      
+      }
+
+
+      .facebookimage{
+
+
+        width: 51px;
+        height: 51px;
+        
+        
+        }
+
+.socialmediaiconimage{
+
+
+width: 60px;
+height: 60px;
+
+
+}
+
+.plussign{
+
+
+  font-size: 40px;
+}
+

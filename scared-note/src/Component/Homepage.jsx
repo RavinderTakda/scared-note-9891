@@ -1,4 +1,7 @@
 import { useState } from "react"
+import styles from './Homepage.module.css'
+import {Link} from "@chakra-ui/react"
+
 
 const { useEffect } = require("react")
 
@@ -262,13 +265,17 @@ return(
 
 {data11.map((ele)=>
 
-<div>
+<div className={styles.div1}>
 
-<h1>The Norday Club</h1>
-<h1>{ele.h1}</h1>
+<i className={styles.bonusnote} >The Norday Club</i>
+<div>
+<h1 className={styles.bonusnote}>{ele.h1}</h1>
 <p>{ele.description}</p>
+<Link to="">
 <p>{ele.Link}</p>
-<img src={ele.image} />
+</Link>
+</div>
+<img  className={styles.div1image} src={ele.image} />
 
 
 
@@ -287,21 +294,31 @@ return(
 
 <div>
 
+<div className={styles.div12image}>
 <img src={ele.image1} />
-<img src={ele.image2} />
+<img   src={ele.image2} />
+
+
+<div >
 <h1>{ele.h1}</h1>
 <p>{ele.description}</p>
+
+<div className={styles.div12link}>
 <p>{ele.Link1}</p>
 <p>{ele.Link2}</p>
+</div>
+<div className={styles.div12link}>
 <p>{ele.Link3}</p>
 <p>{ele.Link4}</p>
+</div>
 
+</div>
 
 
 
 </div>
 
-
+</div>
 )}
 
 
