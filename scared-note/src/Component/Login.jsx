@@ -1,6 +1,26 @@
 import { Button, Heading, Input, InputGroup, InputLeftAddon, InputLeftElement, InputRightElement, Link, Stack } from "@chakra-ui/react"
+import axios from "axios"
 import { useState } from "react"
 import { Navigate } from "react-router-dom"
+
+
+
+const logindata = () => {
+
+return axios.get("https://arcane-chamber-85340.herokuapp.com/singup",{
+
+params:{
+
+    email:""
+
+}
+
+
+})
+
+
+}
+
 
 
 

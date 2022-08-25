@@ -2,29 +2,85 @@
 import {Input, InputGroup, InputLeftAddon, InputLeftElement, Stack, Checkbox, InputRightElement, Button, Hide} from "@chakra-ui/react"
 import { useState } from "react"
 import { Navigate } from "react-router-dom"
+import axios from "axios"
+import { useEffect } from "react"
+
+
+
+
+
+
+
+
 
 
 
  export const Singup = ()  => {
 const [show,setShow] =useState(false)
-const [isAuth,setIsAuth] =useState(false) 
+const [isAuth,setIsAuth] =useState(false)
+const [signupdata,setSignupdata] = useState({name:"",email:"",password:""})
 
 
-const handlechange = () => {
+const handlechange = (signupdata) => {
+
+  console.log(signupdata.email,signupdata.password,signupdata.name)
+ 
+
+
+  axios.post("https://arcane-chamber-85340.herokuapp.com/singup",{
+
+"email":signupdata.email,
+"name":signupdata.name,
+"password":signupdata.password
+
+
+  })
+
+}
 
 
 
-setIsAuth(!isAuth)
+const data = () => {
+
+return  axios.get("https://arcane-chamber-85340.herokuapp.com/singup")
+
+}
+
+
+
+
+useEffect(()=>{
+
+
+data().then((res)=>console.log(res)).catch((err)=>console.log(err))
+  
+
+},[])
+
+
+
+
+
+
+const dataupload = (e) => {
+
+  const {name,value}=e.target
+  
+  setSignupdata({...signupdata,[name]:value})
 
 
 }
 
 
-if(isAuth){
 
-  return  <Navigate to="/login"  />
-  
-  }
+
+
+
+
+
+
+
+
 
 
 
@@ -41,13 +97,25 @@ if(isAuth){
 <h1 >Create Account</h1>
 
 
+
+
+
+
+
+
 {/* Name */}
 <InputGroup width="35%">
 
 <InputLeftAddon children="Name"/>
 
-<Input   type="tel"  size="md"  placeholder="Name" />  
+<Input  onChange={dataupload}   name="name"  type="tel"  size="md"  placeholder="Name" />  
 </InputGroup>
+
+
+
+
+
+
 
 
 
@@ -57,8 +125,14 @@ if(isAuth){
 
 <InputLeftAddon children="Email"/>
 
-<Input   type="tel"  size="md"  placeholder="Email" />  
+<Input   onChange={dataupload}  name="email"   type="tel"  size="md"  placeholder="Email" />  
 </InputGroup>
+
+
+
+
+
+
 
 
 
@@ -68,17 +142,19 @@ if(isAuth){
 
 <InputLeftAddon children="Password"/>
 
-<Input    size="md"  placeholder="Password"  type={show? "text" :"password"}  /> 
+<Input  onChange={dataupload}    name="password"  size="md"  placeholder="Password"  type={show? "text" :"password"}  /> 
+
+
 <InputRightElement width="15%"  >
-
 <Button  height="90%" onClick={()=>setShow(!show)} >{show?"Hide":"Show"}</Button>
-
 </InputRightElement>
+
+
 </InputGroup>
 
 
 
-<Button width="35%" color="green"  onClick={handlechange} >Submit</Button>
+<Button  width="35%" color="green"  onClick={()=>handlechange(signupdata)} >Submit</Button>
 </Stack>
 </>
 
