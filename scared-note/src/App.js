@@ -3,18 +3,21 @@ import './App.css';
 import { Singup } from './Component/Signup';
 
 import { AllRoutes } from './Routes/AllRoutes';
-import { Home } from './Routes/Homepage';
+
+import { Footer } from './Component/Footer';
+import { ProductPage } from './Component/Productpage';
+import { Homepage } from './Component/Homepage';
+
 
 function App() {
   return (
    <>
 
-   
- <Singup/>
- 
 
-<Home/>
-  <AllRoutes/>
+
+<Footer/>
+   
+
 
    </>
   );
