@@ -8,6 +8,7 @@ import { Footer } from './Component/Footer';
 import { ProductPage } from './Component/Productpage';
 import { Homepage } from './Component/Homepage';
 import { Navbar } from './Component/Navbar';
+import Addtocartdata from './Component/Addtocart';
 
 
 function App() {
@@ -15,7 +16,10 @@ function App() {
    <>
 
 
-<Homepage/>
+<Addtocartdata/>
+
+{/* <ProductPage/> */}
+{/* <Homepage/> */}
 {/* <Navbar/> */}
    
 

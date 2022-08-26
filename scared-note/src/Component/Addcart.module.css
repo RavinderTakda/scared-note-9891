@@ -1,0 +1,65 @@
+
+
+.addcartimage{
+
+width: 30%;
+height: 200px;
+
+
+}
+
+.addcartdiv{
+
+border: 1px solid black;
+width: 40%;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+display: flex;
+gap: 20px;
+justify-content: center;
+align-items: center;
+
+
+}
+
+
+.delete{
+
+background-color: red;
+width: 80px;
+height: 40px;
+font-weight: bold;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 4px;
+
+}
+
+.h1{
+
+font-weight: bold;
+
+}
+
+.price{
+
+font-weight: bold;
+
+
+}
+
+
+.button{
+
+font-weight: bold;
+background-color:black;
+margin-left: 10px;
+color: white;
+width: 40px;
+margin-top: 30px;
+border-radius: 2px;
+
+
+
+}
