@@ -15,6 +15,8 @@ return (
 {/* first div */}
 
 
+<div className={styles.container}>
+
 <div className={styles.navbar}  >
 <h1  className={styles.h1} >NORDSTORM</h1>
  <input  className={styles.input}  placeholder="Search for products or brands"></input>
@@ -77,7 +79,7 @@ return (
 
 
 
-
+</div>
 
 </>
 

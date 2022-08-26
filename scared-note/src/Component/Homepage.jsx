@@ -289,27 +289,43 @@ return(
 
 
 
+{/* div12 */}
 
 {data12.map((ele)=>
 
 <div>
 
 <div className={styles.div12image}>
+
 <img src={ele.image1} />
 <img   src={ele.image2} />
 
 
-<div >
-<h1>{ele.h1}</h1>
+
+<div className={styles.div12h1}  >
+<h1 className={styles.h1} >{ele.h1}</h1>
 <p>{ele.description}</p>
 
 <div className={styles.div12link}>
+
+    <Link to="">
 <p>{ele.Link1}</p>
-<p>{ele.Link2}</p>
+</Link>
+
+
+<Link to="">
+<p className={styles.div13link2}>{ele.Link2}</p>
+</Link>
 </div>
 <div className={styles.div12link}>
+
+<Link to="">
 <p>{ele.Link3}</p>
-<p>{ele.Link4}</p>
+</Link>
+
+<Link to="">
+<p className={styles.div13link2}>{ele.Link4}</p>
+</Link>
 </div>
 
 </div>
@@ -322,38 +338,78 @@ return(
 )}
 
 
+
+
+
+{/* divider */}
+<div className={styles.divider} ></div>
+
+
+<h2  className={styles.noteworthy}>NEW & NOTEWORTHY</h2>
+
+
+
+
+
+{/* div13 */}
+<div className={styles.div13}>
 {data13.map((ele)=>
 
-<div>
 
-<img src={ele.image1} />
 
-<h1>{ele.h1}</h1>
+<div className={styles.div13div} >
+<img  className={styles.div13image} src={ele.image1} />
+
+<h4 className={styles.div13h1}>{ele.h1}</h4>
 <p>{ele.description}</p>
+
+<div className={styles.div13link}>
+    <Link>
+    
 <p>{ele.Link1}</p>
-<p>{ele.Link2}</p>
+</Link>
+<Link>
+<p  className={styles.div13link2}>{ele.Link2}</p>
+</Link>
+</div>
+
 
 </div>
 
 
+
+
 )}
+</div>
 
 
 
 
 
+
+{/* div14 */}
 
 {data14.map((ele)=>
 
-<div>
+<div className={styles.div14}>
 
-<img src={ele.image1} />
+<img className={styles.div14image} src={ele.image1} />
 
-<h1>{ele.h1}</h1>
-<h1>{ele.h2}</h1>
+<div className={styles.div14div}>
+
+<h1 className={styles.div14popin}>{ele.h1}</h1>
+
+<div className={styles.div14divider} ></div>
+
+<h1 className={styles.div14popin}>{ele.h2}</h1>
+
 <p>{ele.description}</p>
-<p>{ele.Link1}</p>
 
+<Link>
+<p>{ele.Link1}</p>
+</Link>
+
+</div>
 
 </div>
 
@@ -362,14 +418,30 @@ return(
 
 
 
+
+
+
+<div className={styles.div14greatdeal} >
+<h1 className={styles.div14deals}>Great deals on what you love</h1>
+<p>Items similar to what you've browsed are on sale</p>
+</div>
+
+
+
+
+
+
+
+{/* div15 */}
+<div className={styles.div15}>
 
 {data15.map((ele)=>
 
-<div>
+<div className={styles.div15data}>
 
 <img src={ele.image1} />
 <p>{ele.description}</p>
-<p>{ele.price}</p>
+<p className={styles.div15price}>{ele.price}</p>
 
 
 </div>
@@ -377,18 +449,45 @@ return(
 
 )}
 
+</div>
 
 
 
 
 
+
+
+<div className={styles.divider} ></div>
+
+<div className={styles.thread}>
+    <h1 className={styles.thethread}>THE THREAD</h1>
+    <p>Introducing your new go-to destination for all things fashion, beauty and lifestyle at Nordstrom, from how-tos and style inspiration to exclusive interviews and more.</p>
+<Link>
+<p>Get Inspired </p>
+</Link>
+
+
+</div>
+
+
+
+
+
+
+
+{/* div16 */}
+
+<div className={styles.div16b} >
 {data16.map((ele)=>
 
-<div>
+<div className={styles.div16}>
 
-<img src={ele.image1} />
-<p>{ele.description}</p>
+<img className={styles.div16image} src={ele.image1} />
+<h1 className={styles.div16h1}>{ele.description}</h1>
+
+<Link>
 <p>{ele.link}</p>
+</Link>
 
 
 </div>
@@ -396,17 +495,31 @@ return(
 
 )}
 
+</div>
 
 
 
 
 
+
+
+<div className={styles.divider} ></div>
+<h1 className={styles.shop}>SHOP BY CATEGORY</h1>
+
+
+
+
+
+
+{/* div17 */}
+
+<div  className={styles.div16b}>
 {data17.map((ele)=>
 
-<div>
+<div className={styles.div17b}>
 
-<img src={ele.image1} />
-<p>{ele.description}</p>
+<img  className={styles.div17image}src={ele.image1} />
+<h1 className={styles.div17h1}>{ele.description}</h1>
 
 
 
@@ -414,33 +527,55 @@ return(
 
 
 )}
+</div>
 
 
 
+
+
+<div className={styles.currentlyloving}>
+<div className={styles.loving}>CURRENTLY LOVING</div>
+<h1>Explore favorite looks from Instagram. Tag @Nordstrom to show us your finds.</h1>
+</div>
+
+
+
+
+
+
+<div className={styles.div18}>
 {data18.map((ele)=>
 
-<div>
+<img  className={styles.div18image} src={ele.image} />
 
-<img src={ele.image} />
-
-
-
+)}
 
 </div>
 
 
-)}
+
+
+
+ 
+<div className={styles.trendingyou}>
+    <h1 className={styles.trending}>Trending near you</h1>
+    <p>The most-viewed items by shoppers in your area</p>
+</div>
 
 
 
 
+
+{/* div19 */}
+
+<div className={styles.div19b}>
 {data19.map((ele)=>
 
-<div>
+<div className={styles.div19}>
 
-<img src={ele.image} />
+<img className={styles.div19image} src={ele.image} />
 <p>{ele.description}</p>
-<p>{ele.price}</p>
+<p className={styles.div19price}>{ele.price}</p>
 
 
 
@@ -451,7 +586,7 @@ return(
 )}
 
 
-
+</div>
 </>
 
 

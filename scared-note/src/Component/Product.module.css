@@ -1,0 +1,148 @@
+
+.sidebar{
+
+ width: 15%;
+ height: 700px;
+
+position: fixed;
+ overflow: scroll;
+
+ margin-top: 20px;
+ 
+ 
+}
+
+
+.divider{
+
+border: 1px solid black;
+width: 100%;
+border-top: none;
+margin-top: 20px;
+
+
+
+
+}
+
+.sidebardiv{
+
+display: flex;
+justify-content: space-between;
+margin-top: 10px;
+
+
+}
+
+
+.sidebartext{
+
+font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.productselect{
+display: flex;
+justify-content: flex-end;
+margin-left:1200px;
+border: 1px solid black;
+width: 20%;
+height: 30px;
+
+}
+
+
+
+
+
+
+
+
+.productpage{
+
+
+display: flex;
+display: grid;
+grid-template-columns:  repeat(4, 250px);
+gap: 80px;
+justify-content: flex-end;
+margin-top: 60px;
+z-index: 0;
+
+}
+
+
+.producth1{
+
+
+font-weight: bold;
+
+
+}
+
+
+.productprice{
+
+
+    font-weight: bold;
+    
+    
+    }
+
+
+  
+
+
+    .quickshop{
+
+        background-color: rgb(63, 224, 57);
+        position: relative;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 300px;
+        font-weight: bold;
+        color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+    
+        
+        }
+
+        .quickshop{
+            display: none;
+        }
+
+
+
+        .productcontainer:hover .quickshop{
+display: block;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+        }
+
+        
+
+
+
+        
+
+    
+
+
+
