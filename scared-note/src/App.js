@@ -21,6 +21,7 @@ function App() {
 {/* <ProductPage/> */}
 {/* <Homepage/> */}
 {/* <Navbar/> */}
+{/* <Footer/> */}
    
 
 

@@ -63,3 +63,68 @@ border-radius: 2px;
 
 
 }
+
+
+.totalamount{
+    border: 1px solid burlywood;
+    border-radius: 6px;
+    position: fixed;
+    width: 25%;
+    height: 400px;
+display: flex;
+justify-content: flex-end;
+margin-left: 1000px;
+margin-top: -1600px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.check{
+
+margin-right: 80px;
+
+}
+
+.promocode{
+
+
+display: flex;
+justify-content: space-between;
+
+}
+
+
+.checkout{
+    font-weight: bold;
+color: white;
+background-color: rgb(116, 243, 190);
+width: 90%;
+height: 40px;
+font-size: 20px;
+margin-top: 30px;
+border: 1px solid pink;
+border-radius: 5px;
+}
+
+
+.input{
+
+border: 2px solid black;
+width: 80%;
+height: 40px;
+border-radius: 3px;
+
+
+}
+
+
+.apply{
+
+background-color: aqua;
+border: 1px solid black;
+border-radius: 3px;
+height: 40px;
+width: 70px;
+font-weight: bold;
+
+}
