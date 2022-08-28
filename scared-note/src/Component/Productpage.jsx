@@ -189,12 +189,13 @@ return(
 
 
 <select onClick={(e)=>setSort(e.target.value)} className={styles.productselect}>
+    <option value="desc">Sort by price:high to low</option>
+    <option value="asc">Sort by price:low to high</option>
     <option value="Sort by customer rating">Sort by customer rating</option>
     <option value="Sort by featured">Sort by featured</option>
     <option value="Sort by newest">Sort by newest</option>
     <option value="Sort by percent off">Sort by percent off</option>
-    <option value="desc">Sort by price:high to low</option>
-    <option value="asc">Sort by price:low to high</option>
+   
 </select>
 
 
@@ -222,9 +223,12 @@ return(
 
 </>
 
-<>
-{/* <Footer/> */}
-</>
+<div className={styles.Footer}>
+
+<Footer/>
+
+</div>
+
 
 </>
 

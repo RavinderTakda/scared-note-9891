@@ -8,6 +8,8 @@ position: fixed;
  overflow: scroll;
 
  margin-top: 20px;
+
+
  
  
 }
@@ -59,6 +61,7 @@ margin-left:1200px;
 border: 1px solid black;
 width: 20%;
 height: 30px;
+margin-top: 40px;
 
 }
 
@@ -133,6 +136,13 @@ display: flex;
 justify-content: center;
 align-items: center;
 
+
+        }
+
+        .Footer{
+
+margin-top: 60px;
+z-index: 0px;
 
         }
 

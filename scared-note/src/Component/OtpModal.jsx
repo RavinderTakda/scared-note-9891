@@ -3,6 +3,7 @@
 
 
 import { Alert, AlertDescription, AlertIcon, AlertTitle, Box, Button, HStack, Modal, ModalBody, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay, PinInput, PinInputField, Spinner, Stack } from "@chakra-ui/react"
+import { Navigate, useNavigate } from "react-router-dom";
   
 
 
@@ -11,13 +12,19 @@ import { Alert, AlertDescription, AlertIcon, AlertTitle, Box, Button, HStack, Mo
     
 function Otp({Open,setOpen}){
 
+  const navigate=useNavigate()
+
 
       const handleSubmit=()=>{
         setTimeout(()=>{
         
 alert('Your Order is Successfull');
+navigate("/")
         },2000)
           
+
+
+
 
 
       }
@@ -44,7 +51,11 @@ alert('Your Order is Successfull');
            </HStack>
            <Box marginTop="20px">
 
+          
+
         <Button onClick={handleSubmit} marginLeft="220px" colorScheme='teal' variant='outline' >Submit </Button>
+
+       
            </Box>
            </ModalBody>
          </ModalContent>

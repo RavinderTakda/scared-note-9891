@@ -1,10 +1,11 @@
-import { Button, Heading, Input, InputGroup, InputLeftAddon, InputLeftElement, InputRightElement, Link, Stack } from "@chakra-ui/react"
+import { Button, Heading, Input, InputGroup, InputLeftAddon, InputLeftElement, InputRightElement, Stack } from "@chakra-ui/react"
 import axios from "axios"
 import { useState } from "react"
 import { Navigate } from "react-router-dom"
+import { Footer } from "./Footer"
+import styles from "./Addcart.module.css"
 
-
-
+import {Link} from "react-router-dom"
 const logindata = () => {
 
 return axios.get("https://arcane-chamber-85340.herokuapp.com/singup",{
@@ -45,7 +46,7 @@ return(
 <>
 
 
-<Stack marginLeft="40%" spacing={4}>
+<Stack  marginTop="5%"  marginLeft="40%" spacing={4}>
 
 <Heading/>
 
@@ -65,8 +66,20 @@ return(
 
 </InputRightElement>
 </InputGroup>
+
+
+<Link to="/">
+<Button  width="35%" color="green"  >Submit</Button>
+
+</Link>
 </Stack>
 
+
+<div className={styles.Footer}>
+
+<Footer/>
+
+</div>
 </>
 
 

@@ -5,8 +5,9 @@ import { Navigate } from "react-router-dom"
 import axios from "axios"
 import { useEffect } from "react"
 
-
-
+import {Link} from  "react-router-dom"
+import { Footer } from "./Footer"
+import styles from "./Addcart.module.css"
 
 
 
@@ -92,7 +93,7 @@ const dataupload = (e) => {
 
 
 
-<Stack   marginLeft="30%"  width="auto" spacing={4} >
+<Stack  marginTop="5%"  marginLeft="30%"  width="auto" spacing={4} >
 
 <h1 >Create Account</h1>
 
@@ -153,9 +154,19 @@ const dataupload = (e) => {
 </InputGroup>
 
 
-
+<Link to="/login">
 <Button  width="35%" color="green"  onClick={()=>handlechange(signupdata)} >Submit</Button>
+
+</Link>
 </Stack>
+
+
+<div className={styles.Footer} >
+
+<Footer/>
+</div>
+
+
 </>
 
 
