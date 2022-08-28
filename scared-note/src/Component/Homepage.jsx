@@ -1,6 +1,7 @@
 import { useState } from "react"
 import styles from './Homepage.module.css'
 import {Link} from "@chakra-ui/react"
+import { Footer } from "./Footer"
 
 
 const { useEffect } = require("react")
@@ -441,7 +442,7 @@ return(
 
 <img src={ele.image1} />
 <p>{ele.description}</p>
-<p className={styles.div15price}>{ele.price}</p>
+<p className={styles.div15price}>INR  {ele.price}</p>
 
 
 </div>
@@ -575,7 +576,7 @@ return(
 
 <img className={styles.div19image} src={ele.image} />
 <p>{ele.description}</p>
-<p className={styles.div19price}>{ele.price}</p>
+<p className={styles.div19price}>INR  {ele.price}</p>
 
 
 
@@ -587,6 +588,13 @@ return(
 
 
 </div>
+
+<div className={styles.Footer}>
+
+<Footer/>
+</div>
+
+
 </>
 
 

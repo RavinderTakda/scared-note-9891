@@ -1,7 +1,8 @@
 
 
-import {Link} from "@chakra-ui/react"
+// import {Link} from "@chakra-ui/react"
 import styles from './Navbar.module.css'
+import {Link} from "react-router-dom"
 
  export const Navbar = () => {
 
@@ -18,11 +19,24 @@ return (
 <div className={styles.container}>
 
 <div className={styles.navbar}  >
+
+    <Link to="/">
 <h1  className={styles.h1} >NORDSTORM</h1>
+
+</Link>
  <input  className={styles.input}  placeholder="Search for products or brands"></input>
  <div className={styles.div} >
- <p  className={styles.p}>Sing In</p>
+
+
+    <Link to="/signup">
+ <p  className={styles.p}>Sign In</p>
+
+ </Link>
+
+
+ <Link to="/cart">
  <img   className={styles.image} src="https://cdn-icons-png.flaticon.com/128/2567/2567829.png"/>
+ </Link>
  </div>
 </div>
 
@@ -38,7 +52,7 @@ return (
 <Link to="">
 <h3 style={{color:"red"}} >Sale</h3>
 </Link>
-<Link to="">
+<Link to="/productpage">
 <h3>Women</h3>
 </Link>
 <Link to="">
